@@ -2,7 +2,7 @@
 
 This repository contains the implementation for **Programming Assignment 3** of the CS726: Advanced Machine Learning course (Spring 2025). The assignment focuses on exploring decoding techniques for Large Language Models (LLMs), specifically Llama-2, on the Hindi-to-English translation task using the IN22-Gen dataset. This README covers **Task 0** (Introduction to LLM Decoding Techniques) and **Task 1** (Word-Constrained Decoding).
 
-**Repository**: [https://github.com/Mrudul-Jambhulkar/Advanced-Machine-Learning-CS726-Assignments/tree/main/LLMs_a3](https://github.com/Mrudul-Jambhulkar/Advanced-Machine-Learning-CS726-Assignments/tree/main/LLMs_a3)
+
 
 ## Table of Contents
 
