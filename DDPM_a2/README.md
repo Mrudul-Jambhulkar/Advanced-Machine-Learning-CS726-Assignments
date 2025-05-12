@@ -2,7 +2,7 @@
 
 This repository contains the implementation of **unconditional and conditional DDPMs** (Denoising Diffusion Probabilistic Models) as part of CS726 Assignment 2. The goal is to train generative models capable of synthesizing high-quality images using a diffusion-based approach. This implementation includes key features such as configurable noise schedules, classifier-free guidance, and both forward and reverse diffusion processes.
 
-## Overview
+## Overview 
 
 Diffusion models are a class of generative models that learn to reverse a gradual noising process to generate data from pure noise. The model is trained to predict the noise added at each step of a forward diffusion process, and during sampling, it denoises step by step starting from random Gaussian noise.
 
