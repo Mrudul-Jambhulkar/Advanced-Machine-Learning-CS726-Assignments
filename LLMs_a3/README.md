@@ -27,7 +27,7 @@ This assignment implements and analyzes various decoding strategies for LLMs, fo
    - Script: `task0.py` runs `generate.py` to perform decoding and evaluation.
 
 2. **Task 1: Word-Constrained Decoding** 
-   - Implement a greedy decoding variant that uses a provided bag of words (from an oracle) to constrain the output, leveraging tokenization properties of the LLM.
+   - Implement a greedy decoding variant that uses a provided bag of words (word_lists.txt) to constrain the output, leveraging tokenization properties of the LLM.
    - Use a Trie-based approach to ensure generated tokens align with the word list.
    - Compare performance against Task 0 strategies using BLEU and ROUGE scores.
    - Script: `task1.py` runs `generate_constrained.py` to perform constrained decoding and evaluation.
