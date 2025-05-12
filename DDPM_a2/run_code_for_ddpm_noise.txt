@@ -1,0 +1,1 @@
+python ddpm_noise.py --mode sample --n_steps 100 --lbeta 0.0001 --ubeta 0.02 --epochs 100 --batch_size 64 --lr 0.01 --dataset "moons" --n_dim 2 --seed 42 --n_samples 8000 --type quadratic
