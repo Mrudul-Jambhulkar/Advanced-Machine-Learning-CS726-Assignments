@@ -2,14 +2,17 @@
 
 This repository contains the implementation of **unconditional and conditional DDPMs** (Denoising Diffusion Probabilistic Models) as part of CS726 Assignment 2. The goal is to train generative models capable of synthesizing high-quality images using a diffusion-based approach. This implementation includes key features such as configurable noise schedules, classifier-free guidance, and both forward and reverse diffusion processes.
 
-## Overview 
+## Overview
+This project provides a modular implementation of DDPM and Conditional DDPM for generating synthetic data. Key components include:
 
-Diffusion models are a class of generative models that learn to reverse a gradual noising process to generate data from pure noise. The model is trained to predict the noise added at each step of a forward diffusion process, and during sampling, it denoises step by step starting from random Gaussian noise.
+- **NoiseScheduler**: Manages the noise schedule (linear beta schedule) for forward and reverse diffusion processes.
+- **DDPM**: A neural network for predicting noise in the unconditional diffusion process.
+- **ConditionalDDPM**: Extends DDPM to condition the generation on class labels.
+- **ClassifierDDPM**: Uses the ConditionalDDPM model for classification based on likelihood estimation.
+- **Training and Sampling**: Functions to train the models and generate samples, with support for classifier-free guidance (CFG) in ConditionalDDPM.
+- **Evaluation and Visualization**: Metrics (NLL, EMD) and visualizations to compare real and generated samples.
 
-In this project:
-- We implement **unconditional DDPM** and **Conditional DDPM** (using class labels).
-- Noise schedules can be linear or cosine-based.
-- Classifier-free guidance is explored to improve conditional generation without relying on a separate classifier.
+The code supports 2D and 3D datasets and includes utilities for loading datasets, evaluating samples, and saving results.
 
 
 ## Files
@@ -17,7 +20,7 @@ In this project:
 - `ddpm.py`  
   Implements:
   - `NoiseScheduler` with forward and reverse diffusion methods
-  - `DDPM` model (a U-Net-style convolutional architecture for MNIST)
+  - `DDPM` model 
   - `ConditionalDDPM` (adds class-conditioning through class embeddings)
   - Training and sampling procedures
   - Classifier-Free Guidance for conditional sampling
@@ -27,19 +30,11 @@ In this project:
 
 - `CS726_Assignment_2_report.pdf`  
   A comprehensive report describing:
-  - Mathematical background of DDPMs
   - Implementation details
   - Experiment results (e.g., effect of number of diffusion steps, guidance scale)
   - Generated image samples
   - Observations and analysis
 
-## Highlights
-
-- ✅ Forward and reverse diffusion defined with closed-form variances and means  
-- ✅ Learned noise prediction using simple CNN (inspired by U-Net)  
-- ✅ Configurable training for conditional or unconditional settings  
-- ✅ Support for different noise schedules  
-- ✅ Classifier-free guidance for improved class-conditional generation
 
 ## Setup
 
