@@ -1,4 +1,4 @@
-# CS726: Advanced Machine Learning Assignments 🚀
+# CS726: Advanced Machine Learning Assignments 
 
 This repository contains my coursework for **CS726: Advanced Machine Learning** (Spring 2025, IIT Bombay), including assignments and a project on advanced ML topics like graphical models, diffusion models, and LLM decoding.
 
